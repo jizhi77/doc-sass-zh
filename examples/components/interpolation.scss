@@ -1,0 +1,5 @@
+$name: foo;
+$attr: border;
+p .#{$name} {
+    #{$attr}-left: 1px solid #e1e1e1;
+}

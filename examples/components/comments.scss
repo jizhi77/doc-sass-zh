@@ -1,0 +1,17 @@
+/* This comment is
+ * several lines long.
+ * since it uses the CSS comment syntax,
+ * it will appear in the CSS output. */
+
+body {
+    color: red;
+}
+
+// These comments are only one line long each.
+// They won't appear in the CSS output,
+// since they use the single-line comment syntax.
+h1 {
+    color: yellow;
+}
+
+/* !Copyright @2018-2019 yeluo.wjz@foxmal.com */

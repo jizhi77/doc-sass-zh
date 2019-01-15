@@ -1,0 +1,81 @@
+// @import
+// @media
+@media screen and (min-width: 325px) {
+    .sidebar {
+        width: 100px;
+        @media screen and (max-width: 340px) {
+            width: 200px;
+        }
+    }
+}
+
+$media: screen;
+$feature: -webkit-min-device-pixel-ratio;
+$feature_value: 1.5;
+@media #{$media} and ($feature: $feature_value) {
+    #sidebar {
+        width: 100px;
+    }
+}
+
+/**
+ *@extend*/
+
+.comon-error {
+    border: 1px solid #ff00ff;
+    background-color: #ffddff;
+}
+
+.serious-error {
+    @extend .comon-error;
+    border-width: 3px;
+}
+
+.error {
+    border: 1px solid #ff00ff;
+    background-color: #ff00ff;
+}
+
+.attention {
+    @extend .error;
+    color: red;
+}
+
+.serious {
+    @extend .attention;
+    padding: {
+        top: 20px;
+        left: 20px;
+    }
+}
+
+%placeholder {
+    color: black;
+    font: 12px/18px {
+        family: Seria;
+        weight: 500;
+    }
+}
+
+.paragraph {
+    @extend %placeholder;
+    color: #ff00ff;
+    background: red;
+}
+
+.title {
+    @extend %placeholder;
+    text-align: center;
+}
+
+.para {
+    font: 14px;
+    @at-root {
+        p {
+            color: red;
+        }
+    }
+    div {
+        color: black;
+    }
+}

@@ -1,0 +1,25 @@
+// &
+.foo.bar .baz.bang,
+.bip.qux {
+    &.name {
+        font: 12px;
+    }
+    ;
+}
+
+@mixin does-parent-exit {
+    @if (&) {
+        &:hover {
+            color: blanchedalmond;
+        }
+    }
+    @else {
+        a {
+            color: red;
+        }
+    }
+}
+
+div {
+    @include does-parent-exit();
+}

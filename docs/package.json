@@ -1,0 +1,17 @@
+{
+  "name": "sass-zh",
+  "version": "1.0.0",
+  "description": "Sass中文文档",
+  "main": "index.js",
+  "scripts": {
+    "init": "gitbook init",
+    "serve": "gitbook serve ./ docs",
+    "build": "gitbook build ./ docs"
+  },
+  "author": "jizhi.w77@foxmail.com",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Doc-collections/sass-zh.git"
+  }
+}

@@ -1,0 +1,7 @@
+$content: 'hhhh';
+$content: 'new hhhh' !default;
+$content2: 'null content' !default;
+div {
+    content: $content;
+    content: $content2;
+}

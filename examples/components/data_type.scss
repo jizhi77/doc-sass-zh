@@ -1,0 +1,7 @@
+@mixin message($selector) {
+    body #{$selector}::before {
+        content: 'Hello world!';
+    }
+}
+
+@include message('.header');

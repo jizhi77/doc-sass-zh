@@ -1,0 +1,9 @@
+// 作用域
+#main {
+    $width: 100% !global;
+    width: $width
+}
+
+body {
+    width: $width;
+}

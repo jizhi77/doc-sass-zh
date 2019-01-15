@@ -1,0 +1,11 @@
+{
+    "title": "Sass中文文档",
+    "plugins": [
+        "disqus"
+    ],
+    "pluginsConfig": {
+        "disqus": {
+            "shortName": "jizhi77"
+        }
+    }
+}

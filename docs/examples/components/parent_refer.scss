@@ -1,0 +1,42 @@
+// 伪类
+#app {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    &:hover {
+        color: red;
+    }
+}
+
+// 伪元素
+#app {
+    p {
+        width: 100%;
+    }
+    &:nth-child(2n+1) {
+        background: #e1e1e1;
+    }
+}
+
+// 多级
+#app {
+    .head {
+        a {
+            color: red;
+            &:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+// 选择器名称拼接
+#app {
+    .head {
+        width: 100%;
+    }
+    &-conent {
+        color: red;
+    }
+}
